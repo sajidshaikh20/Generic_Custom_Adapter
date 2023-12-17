@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:elevation="@dimen/_4sdp"
+                app:cardCornerRadius="@dimen/_9sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clSubUserDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@color/white">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvCardName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:text="Adarsh Dwivedi"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/_14sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvCardaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ahemedabad | Employee"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintStart_toStartOf="@+id/tvCardName"
+                        app:layout_constraintTop_toBottomOf="@+id/tvCardName" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvCarddistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within 1.4 km"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintStart_toStartOf="@+id/tvCardaddress"
+                        app:layout_constraintTop_toBottomOf="@+id/tvCardaddress" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvbussinesstype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coffee | Business | Freindship"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/_8sdp"
+                        app:layout_constraintStart_toStartOf="@+id/tvCardaddress"
+                        app:layout_constraintTop_toBottomOf="@+id/tvCarddistance" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgProfileToolbar"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginEnd="16dp"
+                android:elevation="@dimen/_2sdp"
+                android:src="@drawable/codein"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
